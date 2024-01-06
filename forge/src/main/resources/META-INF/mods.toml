@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+license = "CC0-1.0"
+
+[[mods]]
+modId = "vectorientation"
+version = "${version}"
+displayName = "Vectorientation"
+authors = "Tec"
+description = '''
+Rotates falling blocks into the direction they're heading
+'''
+logoFile = "assets/vectorientation/icon.png"
+
+[[dependencies.vectorientation]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.vectorientation]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.examplemod]]
+modId = "architectury"
+mandatory = true
+versionRange = "[4.11.93,)"
+ordering = "AFTER"
+side = "BOTH"

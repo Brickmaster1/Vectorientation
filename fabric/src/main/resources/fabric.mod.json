@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "vectorientation",
+  "version": "${version}",
+
+  "name": "Vectorientation",
+  "description": "Rotates falling blocks into the direction they're heading",
+  "authors": [
+    "Tec"
+  ],
+
+  "license": "CC0-1.0",
+  "icon": "assets/vectorientation/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "vectorientation.Vectorientation"
+    ]
+  },
+  "mixins": [
+    "vectorientation.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.11.93"
+  }
+}
