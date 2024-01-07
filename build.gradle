@@ -10,6 +10,11 @@ architectury {
 subprojects {
     apply plugin: "dev.architectury.loom"
 
+    base {
+        java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+        compileJava.options.encoding = compileTestJava.options.encoding = javadoc.options.encoding = "UTF-8"
+    }
+
     loom {
         silentMojangMappingsLicense()
     }
@@ -33,11 +38,9 @@ allprojects {
     group = rootProject.maven_group
 
     repositories {
-        // Add repositories to retrieve artifacts from in here.
-        // You should only use this when depending on other mods because
-        // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-        // See https://docs.gradle.org/current/userguide/declaring_repositories.html
-        // for more information about repositories.
+        maven { url "https://maven.shedaniel.me/" }
+        maven { url "https://maven.terraformersmc.com/releases/" }
+        maven { url 'https://jitpack.io' }
     }
 
     tasks.withType(JavaCompile) {

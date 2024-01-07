@@ -4,9 +4,9 @@
   "package": "vectorientation.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "FallingBlockRendererMixin"
   ],
   "client": [
-    "FallingBlockRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -34,6 +34,10 @@ dependencies {
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
+
+    modApi "me.shedaniel.cloth:cloth-config-forge:6.5.116"
+
+    forgeRuntimeLibrary 'com.github.falkreon:Jankson:v1.2.3'
 }
 
 processResources {

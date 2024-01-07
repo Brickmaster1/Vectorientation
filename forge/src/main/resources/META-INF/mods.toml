@@ -10,7 +10,7 @@ authors = "Tec"
 description = '''
 Rotates falling blocks into the direction they're heading
 '''
-logoFile = "assets/vectorientation/icon.png"
+logoFile = "vectorientation/icon.png"
 
 [[dependencies.vectorientation]]
 modId = "forge"
@@ -26,9 +26,16 @@ versionRange = "[1.18.2,)"
 ordering = "NONE"
 side = "CLIENT"
 
-[[dependencies.examplemod]]
+[[dependencies.vectorientation]]
 modId = "architectury"
 mandatory = true
 versionRange = "[4.11.93,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.vectorientation]]
+modId = "cloth_config"
+mandatory = true
+versionRange = "[6.5.102,)"
 ordering = "AFTER"
 side = "BOTH"
